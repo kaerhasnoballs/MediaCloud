@@ -1,0 +1,20 @@
+{
+  "name": "MediaCloud",
+  "description": "云传媒",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "media",
+    "cloud"
+  ],
+  "authors": [
+    "houmingxing"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "seajs": "3.0.0",
+    "jquery": "^1.9.0"
+  }
+}
