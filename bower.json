@@ -14,7 +14,7 @@
   "homepage": "",
   "private": true,
   "dependencies": {
-    "seajs": "3.0.0",
-    "jquery": "^1.9.0"
+    "jquery": "^1.9.0",
+    "requirejs": "2.2.0"
   }
 }
