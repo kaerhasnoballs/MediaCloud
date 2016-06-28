@@ -10,7 +10,14 @@ define(['jquery'], function(){
         slidesPerView: 3,
         paginationClickable: true,
         spaceBetween: 30,
-        paginationType: 'progress',
         mousewheelControl: true
     });
+
+    $(".tabs ul li").on("click", function(e){
+        var index = $(this).index();
+        $(".tab-content").hide().eq(index).show();
+        $(this).addClass("selected").siblings("li").removeClass("selected");
+    });
+
+    $(".tabs ul li").eq(0).click();
 });
