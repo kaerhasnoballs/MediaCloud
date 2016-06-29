@@ -8,4 +8,9 @@ define(['jquery'], function(){
     $(".addCard").on("click", function(e){
         window.location.href = "adDtls.html";
     });
+
+    var swiper2 = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
 });

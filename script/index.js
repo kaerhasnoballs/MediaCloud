@@ -4,20 +4,24 @@
  * Creator's MailAddress: work_for_fe@163.com
  * Description:
  */
-define(['jquery'], function(){
-    var swiper2 = new Swiper('.swiper-container-h', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 30,
-        mousewheelControl: true
-    });
+define(function(require, exports, module) {
+    var index = {};
 
-    $(".tabs ul li").on("click", function(e){
-        var index = $(this).index();
-        $(".tab-content").hide().eq(index).show();
-        $(this).addClass("selected").siblings("li").removeClass("selected");
-    });
+    index.init = function(){
+        var swiper1 = new Swiper('.swiper-container-h', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 30,
+            mousewheelControl: true
+        });
 
-    $(".tabs ul li").eq(0).click();
+        $(".tabs ul li").on("click", function(e){
+            var index = $(this).index();
+            $(".tab-content").hide().eq(index).show();
+            $(this).addClass("selected").siblings("li").removeClass("selected");
+        });
+
+        $(".tabs ul li").eq(0).click();
+    };
 });
